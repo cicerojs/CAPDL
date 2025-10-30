@@ -14,7 +14,7 @@ entity Wallets : cuid, managed {
 
 entity Categories : cuid, managed {
     @title: 'Nome'
-    Name  : String(50);
+    name  : String(50);
 
     @title: 'Ícone'
     icon  : String(30);
@@ -37,10 +37,10 @@ entity Movements : cuid, managed {
     type      : Association to MovementType;
 
     @title: 'Carteira'
-    Wallet    : Association to Wallets;
+    wallet    : Association to Wallets;
 
     @title: 'Categoria'
-    Category  : Association to Categories;
+    category  : Association to Categories;
 
     @title: 'Nota'
     note      : String(50);
