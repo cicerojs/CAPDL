@@ -11,7 +11,19 @@
     "@cap-js/sqlite": "^2"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-app-categories": "cds watch --open app-categories/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-app-wallets": "cds watch --open app-wallets/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-app-movements-types": "cds watch --open app-movements-types/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-app-movements": "cds watch --open app-movements/webapp/index.html?sap-ui-xx-viewCache=false"
   },
-  "private": true
+  "private": true,
+  "sapux": [
+    "app/app-categories",
+    "app/app-wallets",
+    "app/app-movements-types",
+    "app/app-movements",
+    "app/app-movements",
+    "app/app-movements"
+  ]
 }

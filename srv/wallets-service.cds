@@ -8,7 +8,7 @@ service wallets {
             Label: 'Nome'
         }],
         Facets          : [{
-            $Type : 'UI.ReferenceFacetType',
+            $Type : 'UI.ReferenceFacet',
             Label : 'Detalhes da Carteira',
             Target: '@UI.FieldGroup#Main'
         }],
